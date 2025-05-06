@@ -3,28 +3,37 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Consulta de Produtos</title>
+  <title>Consulta de Produtos | AVAPAM</title>
   <link rel="stylesheet" href="produtos.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 </head>
 <body>
-  <header class="top-bar">
-    <h1>Consulta de Produtos</h1>
+  <!-- 🌐 Barra de navegação -->
+  <header class="navbar">
+    <div class="container">
+      <h1>AVAPAM</h1>
+      <a href="index.html" class="nav-link">Cadastrar Produtos</a>
+    </div>
   </header>
 
-  <main>
-    <section class="search-box">
-      <input type="text" id="pesquisa" placeholder="Digite o nome do produto ou mercado" />
-      <button id="btn-pesquisar">Pesquisar</button>
-    </section>
-
-    <section id="resultado">
-      <!-- Resultados aparecem aqui -->
-    </section>
+  <!-- 🔍 Seção de busca -->
+  <main class="main">
+    <div class="card">
+      <h2>Consultar Produtos</h2>
+      <div class="form-group">
+        <label for="pesquisa">Pesquisar por nome do produto</label>
+        <input type="text" id="pesquisa" placeholder="Ex: Arroz, Feijão..." />
+      </div>
+      <button class="submit-btn" onclick="buscarProduto()">Pesquisar</button>
+      <div id="resultado"></div>
+    </div>
   </main>
 
   <script src="produtos.js"></script>
 </body>
 </html>
+
 
 
 
