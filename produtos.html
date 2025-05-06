@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="produtos.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
 </head>
 <body>
   <!-- 🌐 Barra de navegação -->
@@ -17,22 +18,24 @@
     </div>
   </header>
 
-  <!-- 🔍 Seção de busca -->
+  <!-- 🔍 Área de busca -->
   <main class="main">
     <div class="card">
-      <h2>Consultar Produtos</h2>
+      <h2>Pesquisar Produtos</h2>
       <div class="form-group">
-        <label for="pesquisa">Pesquisar por nome do produto</label>
-        <input type="text" id="pesquisa" placeholder="Ex: Arroz, Feijão..." />
+        <label for="pesquisa">Digite o nome do produto</label>
+        <input type="text" id="pesquisa" placeholder="Ex: Arroz, Feijão, Macarrão..." />
       </div>
-      <button class="submit-btn" onclick="buscarProduto()">Pesquisar</button>
+      <button id="btn-pesquisar" class="submit-btn">Buscar</button>
       <div id="resultado"></div>
     </div>
   </main>
 
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
   <script src="produtos.js"></script>
 </body>
 </html>
+
 
 
 
